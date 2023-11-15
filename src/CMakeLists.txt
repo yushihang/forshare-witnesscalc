@@ -18,7 +18,7 @@ endif()
 if(USE_ASM AND ARCH MATCHES "x86_64")
 
     if (CMAKE_HOST_SYSTEM_NAME MATCHES "Darwin")
-        set(NASM_FLAGS "-fmacho64 --prefix _")
+        set(NASM_FLAGS "-f macho64 --prefix _")
     else()
         set(NASM_FLAGS -felf64)
     endif()

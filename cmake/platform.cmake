@@ -38,7 +38,7 @@ elseif(TARGET_PLATFORM MATCHES "ios")
 
     if(TARGET_PLATFORM MATCHES "ios_x86_64")
         set(CMAKE_OSX_ARCHITECTURES x86_64)
-        set(GMP_PREFIX ${GMP_ROOT}/package_ios_x86_64)
+        set(GMP_PREFIX ${GMP_ROOT}/package_ios_simulator_x86_64)
         set(ARCH x86_64)
     else()
         set(CMAKE_OSX_ARCHITECTURES arm64)
