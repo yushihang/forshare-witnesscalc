@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 NPROC=8
 fetch_cmd=$( (type wget > /dev/null 2>&1 && echo "wget") || echo "curl -O" )
@@ -11,7 +11,8 @@ usage()
     echo "    android_x86_64: build for Android x86_64"
     echo "    aarch64:        build for Linux aarch64"
     echo "    ios:            build for iOS arm64"
-    echo "    ios_x86_64:     build for iOS simulator on x86_64"
+    echo "    ios_simulator_x86_64:     build for iOS simulator on x86_64"
+    echo "    ios_simulator_arm64:     build for iOS simulator on arm64"
     echo "    host:           build for this host"
     echo "    host_noasm:     build for this host without asm optimizations (e.g. needed for macOS)"
 
@@ -233,10 +234,10 @@ build_ios()
     cd ..
 }
 
-build_ios_x86_64()
+build_ios_simulator_x86_64()
 {
-    PACKAGE_DIR="$GMP_DIR/package_ios_x86_64"
-    BUILD_DIR=build_ios_x86_64
+    PACKAGE_DIR="$GMP_DIR/package_ios_simulator_x86_64"
+    BUILD_DIR=build_ios_simulator_x86_64
 
     if [ -d "$PACKAGE_DIR" ]; then
         echo "iOS package is built already. See $PACKAGE_DIR"
@@ -249,7 +250,7 @@ build_ios_x86_64()
 
     export ARCH_FLAGS="-arch x86_64"
     export OPT_FLAGS="-O3 -g3 -fembed-bitcode"
-    export HOST_FLAGS="${ARCH_FLAGS} -miphoneos-version-min=${MIN_IOS_VERSION} -isysroot $(xcrun --sdk ${SDK} --show-sdk-path)"
+    export HOST_FLAGS="${ARCH_FLAGS} -target arm64-apple-ios14.0-simulator -isysroot $(xcrun --sdk ${SDK} --show-sdk-path) "
 
     export CC=$(xcrun --find --sdk "${SDK}" clang)
     export CXX=$(xcrun --find --sdk "${SDK}" clang++)
@@ -264,6 +265,51 @@ build_ios_x86_64()
     mkdir "$BUILD_DIR"
     cd "$BUILD_DIR"
 
+    echo "../configure --host $TARGET --prefix="$PACKAGE_DIR" --with-pic --disable-fft --disable-assembly"
+    
+    ../configure --host $TARGET --prefix="$PACKAGE_DIR" --with-pic --disable-fft --disable-assembly &&
+    make -j${NPROC} &&
+    make install
+
+    cd ..
+}
+
+
+build_ios_simulator_arm64()
+{
+    PACKAGE_DIR="$GMP_DIR/package_ios_simulator_arm64"
+    BUILD_DIR=build_ios_simulator_arm64
+
+    if [ -d "$PACKAGE_DIR" ]; then
+        echo "iOS package is built already. See $PACKAGE_DIR"
+        return 1
+    fi
+
+    export SDK="iphonesimulator"
+    export TARGET=arm64-apple-darwin
+    export MIN_IOS_VERSION=8.0
+
+    export ARCH_FLAGS="-arch arm64"
+    #export OPT_FLAGS="-O3 -g3 -fembed-bitcode"
+    export OPT_FLAGS="-O0 -g3"
+    export HOST_FLAGS="${ARCH_FLAGS}  -isysroot $(xcrun --sdk ${SDK} --show-sdk-path)  -target arm64-apple-ios14.0-simulator"
+    #-miphoneos-version-min=${MIN_IOS_VERSION}
+
+    export CC=$(xcrun --find --sdk "${SDK}" clang)
+    export CXX=$(xcrun --find --sdk "${SDK}" clang++)
+    export CPP=$(xcrun --find --sdk "${SDK}" cpp)
+    export CFLAGS="${HOST_FLAGS} ${OPT_FLAGS}"
+    export CXXFLAGS="${HOST_FLAGS} ${OPT_FLAGS}"
+    export LDFLAGS="${HOST_FLAGS}"
+
+    echo $TARGET
+
+    rm -rf "$BUILD_DIR"
+    mkdir "$BUILD_DIR"
+    cd "$BUILD_DIR"
+
+    echo "../configure --host $TARGET --prefix="$PACKAGE_DIR" --with-pic --disable-fft --disable-assembly "
+    
     ../configure --host $TARGET --prefix="$PACKAGE_DIR" --with-pic --disable-fft --disable-assembly &&
     make -j${NPROC} &&
     make install
@@ -292,9 +338,14 @@ case "$TARGET_PLATFORM" in
         build_ios
     ;;
 
-    "ios_x86_64" )
+    "ios_simulator_x86_64" )
         echo "Building for ios simulator on x86_64"
-        build_ios_x86_64
+        build_ios_simulator_x86_64
+    ;;
+
+    "ios_simulator_arm64" )
+        echo "Building for ios simulator on arm64"
+        build_ios_simulator_arm64
     ;;
 
     "android" )
