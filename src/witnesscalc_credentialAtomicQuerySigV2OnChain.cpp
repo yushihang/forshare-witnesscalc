@@ -1,6 +1,7 @@
 #include "witnesscalc_credentialAtomicQuerySigV2OnChain.h"
 #include "witnesscalc.h"
 
+extern "C"
 int
 witnesscalc_credentialAtomicQuerySigV2OnChain(
     const char *circuit_buffer,  unsigned long  circuit_size,
