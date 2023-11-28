@@ -45,6 +45,10 @@ Circom_Circuit* loadCircuit(const void *buffer, unsigned long buffer_size) {
       if (inisize % sizeof(u32) != 0) {
         throw std::runtime_error("Invalid circuit file: wrong inisize");
       }
+        
+      if (buffer_size <= inisize) {
+        throw std::runtime_error("Invalid circuit file: buffer_size <= inisize");
+      }
       u32 dataiomap[(buffer_size-inisize)/sizeof(u32)];
       memcpy((void *)dataiomap, (void *)(bdata+inisize), buffer_size-inisize);
       u32* pu32 = dataiomap;
