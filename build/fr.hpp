@@ -20,51 +20,64 @@ extern FrRawElement Fr_rawR3;
 
 #if defined(ARCH_X86_64)
 
+
 extern "C" void Fr_copy(PFrElement r, PFrElement a);
-extern "C" void Fr_copyn(PFrElement r, PFrElement a, int n);
-extern "C" void Fr_add(PFrElement r, PFrElement a, PFrElement b);
-extern "C" void Fr_sub(PFrElement r, PFrElement a, PFrElement b);
-extern "C" void Fr_neg(PFrElement r, PFrElement a);
 extern "C" void Fr_mul(PFrElement r, PFrElement a, PFrElement b);
-extern "C" void Fr_square(PFrElement r, PFrElement a);
+extern "C" void Fr_toNormal(PFrElement r, PFrElement a);
+
+extern "C" void Fr_toLongNormal(PFrElement r, PFrElement a);
+extern "C" int Fr_isTrue(PFrElement pE);
+extern "C" void Fr_copyn(PFrElement r, PFrElement a, int n);
+extern "C" void Fr_lt(PFrElement r, PFrElement a, PFrElement b);
+extern "C" int Fr_toInt(PFrElement pE);
+extern "C" void Fr_shl(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_shr(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_band(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_bor(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_bxor(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_bnot(PFrElement r, PFrElement a);
-extern "C" void Fr_shl(PFrElement r, PFrElement a, PFrElement b);
-extern "C" void Fr_shr(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_sub(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_eq(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_neq(PFrElement r, PFrElement a, PFrElement b);
-extern "C" void Fr_lt(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_add(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_gt(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_leq(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_geq(PFrElement r, PFrElement a, PFrElement b);
-extern "C" void Fr_land(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_lor(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_lnot(PFrElement r, PFrElement a);
-extern "C" void Fr_toNormal(PFrElement r, PFrElement a);
-extern "C" void Fr_toLongNormal(PFrElement r, PFrElement a);
+extern "C" void Fr_land(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_neg(PFrElement r, PFrElement a);
 extern "C" void Fr_toMontgomery(PFrElement r, PFrElement a);
-
-extern "C" int Fr_isTrue(PFrElement pE);
-extern "C" int Fr_toInt(PFrElement pE);
-
-extern "C" void Fr_rawCopy(FrRawElement pRawResult, const FrRawElement pRawA);
+extern "C" void Fr_square(PFrElement r, PFrElement a);
+void Fr_rawCopy(FrRawElement pRawResult, const FrRawElement pRawA);
 extern "C" void Fr_rawSwap(FrRawElement pRawResult, FrRawElement pRawA);
-extern "C" void Fr_rawAdd(FrRawElement pRawResult, const FrRawElement pRawA, const FrRawElement pRawB);
-extern "C" void Fr_rawSub(FrRawElement pRawResult, const FrRawElement pRawA, const FrRawElement pRawB);
+void Fr_rawAdd(FrRawElement pRawResult, const FrRawElement pRawA, const FrRawElement pRawB);
+void Fr_rawSub(FrRawElement pRawResult, const FrRawElement pRawA, const FrRawElement pRawB);
 extern "C" void Fr_rawNeg(FrRawElement pRawResult, const FrRawElement pRawA);
-extern "C" void Fr_rawMMul(FrRawElement pRawResult, const FrRawElement pRawA, const FrRawElement pRawB);
+void Fr_rawMMul(FrRawElement pRawResult, const FrRawElement pRawA, const FrRawElement pRawB);
 extern "C" void Fr_rawMSquare(FrRawElement pRawResult, const FrRawElement pRawA);
 extern "C" void Fr_rawMMul1(FrRawElement pRawResult, const FrRawElement pRawA, uint64_t pRawB);
-extern "C" void Fr_rawToMontgomery(FrRawElement pRawResult, const FrRawElement &pRawA);
-extern "C" void Fr_rawFromMontgomery(FrRawElement pRawResult, const FrRawElement &pRawA);
+void Fr_rawToMontgomery(FrRawElement pRawResult, const FrRawElement &pRawA);
+void Fr_rawFromMontgomery(FrRawElement pRawResult, const FrRawElement &pRawA);
 extern "C" int Fr_rawIsEq(const FrRawElement pRawA, const FrRawElement pRawB);
 extern "C" int Fr_rawIsZero(const FrRawElement pRawB);
+extern "C" void Fr_rawZero(FrRawElement pRawResult);
+extern "C" void Fr_rawCopyS2L(FrRawElement pRawResult, int64_t val);
+extern "C" void Fr_rawAddLS(FrRawElement pRawResult, FrRawElement pRawA, uint64_t rawB);
+extern "C" void Fr_rawSubSL(FrRawElement pRawResult, uint64_t rawA, FrRawElement pRawB);
+extern "C" void Fr_rawSubLS(FrRawElement pRawResult, FrRawElement pRawA, uint64_t rawB);
+extern "C" void Fr_rawNegLS(FrRawElement pRawResult, FrRawElement pRawA, uint64_t rawB);
+extern "C" int  Fr_rawCmp(FrRawElement pRawA, FrRawElement pRawB);
+extern "C" void Fr_rawAnd(FrRawElement pRawResult, FrRawElement pRawA, FrRawElement pRawB);
+extern "C" void Fr_rawOr(FrRawElement pRawResult, FrRawElement pRawA, FrRawElement pRawB);
+extern "C" void Fr_rawXor(FrRawElement pRawResult, FrRawElement pRawA, FrRawElement pRawB);
 extern "C" void Fr_rawShl(FrRawElement r, FrRawElement a, uint64_t b);
 extern "C" void Fr_rawShr(FrRawElement r, FrRawElement a, uint64_t b);
+extern "C" void Fr_rawNot(FrRawElement pRawResult, FrRawElement pRawA);
+extern "C" void Fr_rawSubRegular(FrRawElement pRawResult, FrRawElement pRawA, FrRawElement pRawB);
 
 extern "C" void Fr_fail();
+extern "C" void Fr_longErr();
 
 #elif defined(ARCH_ARM64)
 
