@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B182F1072B15CA1400F61B3E /* testSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182F1062B15CA1400F61B3E /* testSwiftApp.swift */; };
+		B182F1092B15CA1400F61B3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182F1082B15CA1400F61B3E /* ContentView.swift */; };
+		B182F10B2B15CA1500F61B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B182F10A2B15CA1500F61B3E /* Assets.xcassets */; };
+		B182F10E2B15CA1500F61B3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B182F10D2B15CA1500F61B3E /* Preview Assets.xcassets */; };
+		B182F1172B15CA6500F61B3E /* libfr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B182F1142B15CA6500F61B3E /* libfr.a */; };
+		B182F1182B15CA6500F61B3E /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B182F1152B15CA6500F61B3E /* libgmp.a */; };
+		B182F11A2B15CA9200F61B3E /* witness.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182F1192B15CA9200F61B3E /* witness.swift */; };
+		B182F1582B15CAAA00F61B3E /* libwitnesscalc_authV2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B182F1462B15CA9D00F61B3E /* libwitnesscalc_authV2.a */; };
+		B182F15B2B15CBDB00F61B3E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B182F15A2B15CBDB00F61B3E /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B182F1332B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06939ED54B6B4CF7868D5A47;
+			remoteInfo = authV2;
+		};
+		B182F1352B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8C53AE0AF3E4828B476D037;
+			remoteInfo = credentialAtomicQueryMTPV2;
+		};
+		B182F1372B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 89091EEDB2824A99BEC1EC78;
+			remoteInfo = credentialAtomicQueryMTPV2OnChain;
+		};
+		B182F1392B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61FEAC25778341ECBB8A4A91;
+			remoteInfo = credentialAtomicQuerySigV2;
+		};
+		B182F13B2B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2E67CA949FC43E2B0D10E91;
+			remoteInfo = credentialAtomicQuerySigV2OnChain;
+		};
+		B182F13D2B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A62926EC79142B6816D2AEB;
+			remoteInfo = fr;
+		};
+		B182F13F2B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2DE398365CF4970A99192E9;
+			remoteInfo = test_platform;
+		};
+		B182F1412B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EA21614F42F4645B29B17C8;
+			remoteInfo = tests;
+		};
+		B182F1432B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 90D7458449F943F7B440E459;
+			remoteInfo = witnesscalc_authV2;
+		};
+		B182F1452B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A62CE32B748546A1946277BB;
+			remoteInfo = witnesscalc_authV2Static;
+		};
+		B182F1472B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F78523DA32C4BD4988921CE;
+			remoteInfo = witnesscalc_credentialAtomicQueryMTPV2;
+		};
+		B182F1492B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32DD35901241415F906205C0;
+			remoteInfo = witnesscalc_credentialAtomicQueryMTPV2OnChain;
+		};
+		B182F14B2B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA9B0FFEE5D5444F88577C9B;
+			remoteInfo = witnesscalc_credentialAtomicQueryMTPV2OnChainStatic;
+		};
+		B182F14D2B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60E484BD28444B61ACBFE7A3;
+			remoteInfo = witnesscalc_credentialAtomicQueryMTPV2Static;
+		};
+		B182F14F2B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A397B8C6C4745E88E19DD39;
+			remoteInfo = witnesscalc_credentialAtomicQuerySigV2;
+		};
+		B182F1512B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54615108A0BD4498A97F1F94;
+			remoteInfo = witnesscalc_credentialAtomicQuerySigV2OnChain;
+		};
+		B182F1532B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9F83C2CB5D24DDE907F8209;
+			remoteInfo = witnesscalc_credentialAtomicQuerySigV2OnChainStatic;
+		};
+		B182F1552B15CA9D00F61B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DFA33A77DF8A49738C1570ED;
+			remoteInfo = witnesscalc_credentialAtomicQuerySigV2Static;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B182F1032B15CA1400F61B3E /* testSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B182F1062B15CA1400F61B3E /* testSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSwiftApp.swift; sourceTree = "<group>"; };
+		B182F1082B15CA1400F61B3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B182F10A2B15CA1500F61B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B182F10D2B15CA1500F61B3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B182F1142B15CA6500F61B3E /* libfr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfr.a; sourceTree = SOURCE_ROOT; };
+		B182F1152B15CA6500F61B3E /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = SOURCE_ROOT; };
+		B182F1162B15CA6500F61B3E /* witnesscalc_authV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = witnesscalc_authV2.h; sourceTree = SOURCE_ROOT; };
+		B182F1192B15CA9200F61B3E /* witness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = witness.swift; sourceTree = "<group>"; };
+		B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = witnesscalc.xcodeproj; path = ../../witnesscalc.xcodeproj; sourceTree = "<group>"; };
+		B182F1592B15CAE700F61B3E /* testSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B182F15A2B15CBDB00F61B3E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B182F1002B15CA1400F61B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B182F15B2B15CBDB00F61B3E /* libc++.tbd in Frameworks */,
+				B182F1582B15CAAA00F61B3E /* libwitnesscalc_authV2.a in Frameworks */,
+				B182F1182B15CA6500F61B3E /* libgmp.a in Frameworks */,
+				B182F1172B15CA6500F61B3E /* libfr.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B182F0FA2B15CA1400F61B3E = {
+			isa = PBXGroup;
+			children = (
+				B182F1592B15CAE700F61B3E /* testSwift-Bridging-Header.h */,
+				B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */,
+				B182F1052B15CA1400F61B3E /* testSwift */,
+				B182F1042B15CA1400F61B3E /* Products */,
+				B182F1572B15CAAA00F61B3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B182F1042B15CA1400F61B3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B182F1032B15CA1400F61B3E /* testSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B182F1052B15CA1400F61B3E /* testSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B182F1142B15CA6500F61B3E /* libfr.a */,
+				B182F1152B15CA6500F61B3E /* libgmp.a */,
+				B182F1162B15CA6500F61B3E /* witnesscalc_authV2.h */,
+				B182F1062B15CA1400F61B3E /* testSwiftApp.swift */,
+				B182F1082B15CA1400F61B3E /* ContentView.swift */,
+				B182F10A2B15CA1500F61B3E /* Assets.xcassets */,
+				B182F10C2B15CA1500F61B3E /* Preview Content */,
+				B182F1192B15CA9200F61B3E /* witness.swift */,
+			);
+			path = testSwift;
+			sourceTree = "<group>";
+		};
+		B182F10C2B15CA1500F61B3E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B182F10D2B15CA1500F61B3E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B182F11C2B15CA9D00F61B3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B182F1342B15CA9D00F61B3E /* authV2 */,
+				B182F1362B15CA9D00F61B3E /* credentialAtomicQueryMTPV2 */,
+				B182F1382B15CA9D00F61B3E /* credentialAtomicQueryMTPV2OnChain */,
+				B182F13A2B15CA9D00F61B3E /* credentialAtomicQuerySigV2 */,
+				B182F13C2B15CA9D00F61B3E /* credentialAtomicQuerySigV2OnChain */,
+				B182F13E2B15CA9D00F61B3E /* libfr.a */,
+				B182F1402B15CA9D00F61B3E /* test_platform */,
+				B182F1422B15CA9D00F61B3E /* tests */,
+				B182F1442B15CA9D00F61B3E /* libwitnesscalc_authV2.dylib */,
+				B182F1462B15CA9D00F61B3E /* libwitnesscalc_authV2.a */,
+				B182F1482B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2.dylib */,
+				B182F14A2B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2OnChain.dylib */,
+				B182F14C2B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2OnChain.a */,
+				B182F14E2B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2.a */,
+				B182F1502B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2.dylib */,
+				B182F1522B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2OnChain.dylib */,
+				B182F1542B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2OnChain.a */,
+				B182F1562B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B182F1572B15CAAA00F61B3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B182F15A2B15CBDB00F61B3E /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B182F1022B15CA1400F61B3E /* testSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B182F1112B15CA1500F61B3E /* Build configuration list for PBXNativeTarget "testSwift" */;
+			buildPhases = (
+				B182F0FF2B15CA1400F61B3E /* Sources */,
+				B182F1002B15CA1400F61B3E /* Frameworks */,
+				B182F1012B15CA1400F61B3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testSwift;
+			productName = testSwift;
+			productReference = B182F1032B15CA1400F61B3E /* testSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B182F0FB2B15CA1400F61B3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B182F1022B15CA1400F61B3E = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B182F0FE2B15CA1400F61B3E /* Build configuration list for PBXProject "testSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B182F0FA2B15CA1400F61B3E;
+			productRefGroup = B182F1042B15CA1400F61B3E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B182F11C2B15CA9D00F61B3E /* Products */;
+					ProjectRef = B182F11B2B15CA9D00F61B3E /* witnesscalc.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B182F1022B15CA1400F61B3E /* testSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B182F1342B15CA9D00F61B3E /* authV2 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = authV2;
+			path = authV2.app;
+			remoteRef = B182F1332B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1362B15CA9D00F61B3E /* credentialAtomicQueryMTPV2 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = credentialAtomicQueryMTPV2;
+			path = credentialAtomicQueryMTPV2.app;
+			remoteRef = B182F1352B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1382B15CA9D00F61B3E /* credentialAtomicQueryMTPV2OnChain */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = credentialAtomicQueryMTPV2OnChain;
+			path = credentialAtomicQueryMTPV2OnChain.app;
+			remoteRef = B182F1372B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F13A2B15CA9D00F61B3E /* credentialAtomicQuerySigV2 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = credentialAtomicQuerySigV2;
+			path = credentialAtomicQuerySigV2.app;
+			remoteRef = B182F1392B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F13C2B15CA9D00F61B3E /* credentialAtomicQuerySigV2OnChain */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = credentialAtomicQuerySigV2OnChain;
+			path = credentialAtomicQuerySigV2OnChain.app;
+			remoteRef = B182F13B2B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F13E2B15CA9D00F61B3E /* libfr.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfr.a;
+			remoteRef = B182F13D2B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1402B15CA9D00F61B3E /* test_platform */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = test_platform;
+			path = test_platform.app;
+			remoteRef = B182F13F2B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1422B15CA9D00F61B3E /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = tests;
+			path = tests.app;
+			remoteRef = B182F1412B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1442B15CA9D00F61B3E /* libwitnesscalc_authV2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwitnesscalc_authV2.dylib;
+			remoteRef = B182F1432B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1462B15CA9D00F61B3E /* libwitnesscalc_authV2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwitnesscalc_authV2.a;
+			remoteRef = B182F1452B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1482B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwitnesscalc_credentialAtomicQueryMTPV2.dylib;
+			remoteRef = B182F1472B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F14A2B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2OnChain.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwitnesscalc_credentialAtomicQueryMTPV2OnChain.dylib;
+			remoteRef = B182F1492B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F14C2B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2OnChain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwitnesscalc_credentialAtomicQueryMTPV2OnChain.a;
+			remoteRef = B182F14B2B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F14E2B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQueryMTPV2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwitnesscalc_credentialAtomicQueryMTPV2.a;
+			remoteRef = B182F14D2B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1502B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwitnesscalc_credentialAtomicQuerySigV2.dylib;
+			remoteRef = B182F14F2B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1522B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2OnChain.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwitnesscalc_credentialAtomicQuerySigV2OnChain.dylib;
+			remoteRef = B182F1512B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1542B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2OnChain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwitnesscalc_credentialAtomicQuerySigV2OnChain.a;
+			remoteRef = B182F1532B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B182F1562B15CA9D00F61B3E /* libwitnesscalc_credentialAtomicQuerySigV2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwitnesscalc_credentialAtomicQuerySigV2.a;
+			remoteRef = B182F1552B15CA9D00F61B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B182F1012B15CA1400F61B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B182F10E2B15CA1500F61B3E /* Preview Assets.xcassets in Resources */,
+				B182F10B2B15CA1500F61B3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B182F0FF2B15CA1400F61B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B182F1092B15CA1400F61B3E /* ContentView.swift in Sources */,
+				B182F1072B15CA1400F61B3E /* testSwiftApp.swift in Sources */,
+				B182F11A2B15CA9200F61B3E /* witness.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B182F10F2B15CA1500F61B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B182F1102B15CA1500F61B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B182F1122B15CA1500F61B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testSwift/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsbc.poseidonHashTest.testSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/test/testSwift/testSwift-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B182F1132B15CA1500F61B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testSwift/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsbc.poseidonHashTest.testSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/test/testSwift/testSwift-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B182F0FE2B15CA1400F61B3E /* Build configuration list for PBXProject "testSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B182F10F2B15CA1500F61B3E /* Debug */,
+				B182F1102B15CA1500F61B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B182F1112B15CA1500F61B3E /* Build configuration list for PBXNativeTarget "testSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B182F1122B15CA1500F61B3E /* Debug */,
+				B182F1132B15CA1500F61B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B182F0FB2B15CA1400F61B3E /* Project object */;
+}

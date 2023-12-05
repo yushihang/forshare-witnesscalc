@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2B3A3831-2A69-4D0E-8997-03E4E34A5D33"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9724751-2600-41B0-A2D8-7BA6BC85EFDE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "loadCircuit(buffer, buffer_size)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "D9724751-2600-41B0-A2D8-7BA6BC85EFDE - c5e034570860917b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "authV2::loadCircuit(void const*, unsigned long)"
+                  moduleName = "testSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yushihang/Documents/HSBC/polygonID/witnesscalc/src/witnesscalc.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "D9724751-2600-41B0-A2D8-7BA6BC85EFDE - c5e034570860917b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "authV2::loadCircuit(void const*, unsigned long)"
+                  moduleName = "testSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yushihang/Documents/HSBC/polygonID/witnesscalc/src/witnesscalc.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39DF24B0-7F98-4D51-9D75-A35A4CA9F4DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "loadCircuit(buffer, buffer_size)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

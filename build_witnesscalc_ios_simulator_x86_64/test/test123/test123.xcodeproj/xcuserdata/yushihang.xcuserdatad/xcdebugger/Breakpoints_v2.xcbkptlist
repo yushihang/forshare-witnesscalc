@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "75D164C0-2C6B-48C4-8ED4-BF2469500F51"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A78A08E-79F5-47C4-81CC-0867CE0C585B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test123/ViewController.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-test"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A78A08E-79F5-47C4-81CC-0867CE0C585B - eab0bed6c7690fd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController test]"
+                  moduleName = "test123"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/test/test123/test123/ViewController.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "7A78A08E-79F5-47C4-81CC-0867CE0C585B - eab0bed6c7690fd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController test]"
+                  moduleName = "test123"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/test/test123/test123/ViewController.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F969315A-46A6-45D4-B0DF-1B9EDB41682F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test123/ViewController.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-test"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F969315A-46A6-45D4-B0DF-1B9EDB41682F - eab0bed6c7690fff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController test]"
+                  moduleName = "test123"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/test/test123/test123/ViewController.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "F969315A-46A6-45D4-B0DF-1B9EDB41682F - eab0bed6c7690fff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController test]"
+                  moduleName = "test123"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/test/test123/test123/ViewController.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBF75FFB-9274-4050-996E-2EF905407AE5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc_authV2.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "witnesscalc_authV2(circuit_buffer, circuit_size, json_buffer, json_size, wtns_buffer, wtns_size, error_msg, error_msg_maxsize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "991E5B7D-54C2-4C8C-926E-B41B61CC7F0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
+            landmarkName = "witnesscalc(circuit_buffer, circuit_size, json_buffer, json_size, wtns_buffer, wtns_size, error_msg, error_msg_maxsize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "697945EF-DB6D-49C1-AA01-CD17A10EEC4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "witnesscalc(circuit_buffer, circuit_size, json_buffer, json_size, wtns_buffer, wtns_size, error_msg, error_msg_maxsize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C59FB7C-3DC0-4478-A01D-5FA6C7131E6F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "witnesscalc(circuit_buffer, circuit_size, json_buffer, json_size, wtns_buffer, wtns_size, error_msg, error_msg_maxsize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AA72F54-79BB-442A-93AB-93305595FEB2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "witnesscalc(circuit_buffer, circuit_size, json_buffer, json_size, wtns_buffer, wtns_size, error_msg, error_msg_maxsize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A700A8E5-78A8-4D52-BA89-500BA3A1EB4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../src/witnesscalc.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
+            landmarkName = "witnesscalc(circuit_buffer, circuit_size, json_buffer, json_size, wtns_buffer, wtns_size, error_msg, error_msg_maxsize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
