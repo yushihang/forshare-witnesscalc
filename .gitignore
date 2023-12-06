@@ -68,8 +68,10 @@ tmp
 *.sublime-workspace
 CMakeLists.txt.user
 
-depends/gmp*
+#depends/gmp*
 
 build/*.o
 build_*
 package*
+conftest.out
+depends
