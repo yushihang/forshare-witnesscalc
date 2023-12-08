@@ -72,11 +72,10 @@ CMakeLists.txt.user
 
 build/*.o
 build_*
-package*
 conftest.out
-depends
 libwitnesscalc_authV2.a
 libwitnesscalc_credentialAtomicQueryMTPV2.a
 libwitnesscalc_credentialAtomicQueryMTPV2OnChain.a
 libwitnesscalc_credentialAtomicQuerySigV2.a
 libwitnesscalc_credentialAtomicQuerySigV2OnChain.a
+package_host_arm64
