@@ -15,12 +15,10 @@
 		31AFF33BB15746C08AEBE6F9 /* calcwit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4B6563A26463AB1B998C5 /* calcwit.cpp */; };
 		4DA9A4168C604A6CA2E1EC43 /* witnesscalc_credentialAtomicQueryMTPV2OnChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 640F29360E8C475B91921773 /* witnesscalc_credentialAtomicQueryMTPV2OnChain.cpp */; };
 		6F83F0997A7748B6BA1691BE /* calcwit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB9017CF6703496EACDCE788 /* calcwit.cpp */; };
-		7833A0004C8446ECA007BDA2 /* fr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF25D5DC19D844A5BDCB26DA /* fr.cpp */; };
 		793E0C9E70004694BE378D69 /* witnesscalc_credentialAtomicQuerySigV2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D653679F4E5FA4A1E4F9 /* witnesscalc_credentialAtomicQuerySigV2.cpp */; };
 		931E7FD252A6486EA8DE71A7 /* witnesscalc_credentialAtomicQueryMTPV2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBF814AE52DD4353B57D89DC /* witnesscalc_credentialAtomicQueryMTPV2.cpp */; };
 		9A6722CE68F243FBACFF4052 /* authV2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D6FFFB1E5942A29A1CF18E /* authV2.cpp */; };
 		AB9B55A415DA440CAB8D8DE2 /* credentialAtomicQuerySigV2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B42496D7583E45B2BA025B81 /* credentialAtomicQuerySigV2.cpp */; };
-		AD60EE06ED124AEE91E377A9 /* fr_asm.o in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BC99B49C38450781CAD582 /* fr_asm.o */; };
 		BA1F2B7B8B5E461DA666C9AA /* witnesscalc_credentialAtomicQuerySigV2OnChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A84659BEC1904C21AAED3653 /* witnesscalc_credentialAtomicQuerySigV2OnChain.cpp */; };
 		BCF5FBDDC6CA4D6EB99A991C /* witnesscalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E95C8664A944E7934E8225 /* witnesscalc.cpp */; };
 		C1964089502E45F7948C526D /* witnesscalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DD25878004C4891890CD391 /* witnesscalc.cpp */; };
@@ -30,44 +28,6 @@
 		EB5F5AA436F54EE2AEBE6313 /* witnesscalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB24CF522A8A4132A3C369B1 /* witnesscalc.cpp */; };
 		F761BE92E2E742A888B5FA9F /* witnesscalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 914667DFC7D5421A8B7ED6AF /* witnesscalc.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		204403EFE7FB4AA4856DB04B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C42F9AF0A602434D8E334329 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E78068E3828E4B25A7525163;
-			remoteInfo = fr;
-		};
-		263DA75982CD43E095C873AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C42F9AF0A602434D8E334329 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E78068E3828E4B25A7525163;
-			remoteInfo = fr;
-		};
-		3D92CC7877384CF383B7F510 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C42F9AF0A602434D8E334329 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E78068E3828E4B25A7525163;
-			remoteInfo = fr;
-		};
-		C3005FD814144C228DC42572 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C42F9AF0A602434D8E334329 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E78068E3828E4B25A7525163;
-			remoteInfo = fr;
-		};
-		EDF1A04D47244522A761F00C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C42F9AF0A602434D8E334329 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E78068E3828E4B25A7525163;
-			remoteInfo = fr;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07271F178B434A7EB0B6BE98 /* credentialAtomicQuerySigV2OnChain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = credentialAtomicQuerySigV2OnChain.cpp; path = src/credentialAtomicQuerySigV2OnChain.cpp; sourceTree = SOURCE_ROOT; };
@@ -129,7 +89,6 @@
 		92491EF9890B4E70870DC24D /* witnesscalc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = witnesscalc.h; path = src/witnesscalc.h; sourceTree = SOURCE_ROOT; };
 		971291E316DC45EDA7AA798F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		9A543B68B1B949C79E383923 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		9A62926EC79142B6816D2AEB /* libfr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfr.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B34694DBBBA45CAA04E455A /* witnesscalc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = witnesscalc.cpp; path = src/witnesscalc.cpp; sourceTree = SOURCE_ROOT; };
 		9CCCFC90E1BD452D8A929011 /* fr_asm.o.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fr_asm.o.rule; path = build/fr_asm.o.rule; sourceTree = SOURCE_ROOT; };
 		9DD66FCE5F164B7ABC7FF9E2 /* witnesscalc_authV2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = witnesscalc_authV2.h; path = src/witnesscalc_authV2.h; sourceTree = SOURCE_ROOT; };
@@ -156,7 +115,7 @@
 		CB16FE12DF734869AC53444C /* witnesscalc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = witnesscalc.cpp; path = src/witnesscalc.cpp; sourceTree = SOURCE_ROOT; };
 		CB24CF522A8A4132A3C369B1 /* witnesscalc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = witnesscalc.cpp; path = src/witnesscalc.cpp; sourceTree = SOURCE_ROOT; };
 		CF913AAE0C4B45EEBDF4720C /* witnesscalc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = witnesscalc.h; path = src/witnesscalc.h; sourceTree = SOURCE_ROOT; };
-		D0BC99B49C38450781CAD582 /* fr_asm.o */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "compiled.mach-o.objfile"; name = fr_asm.o; path = /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build/fr_asm.o; sourceTree = "<absolute>"; };
+		D0BC99B49C38450781CAD582 /* fr_asm.o */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "compiled.mach-o.objfile"; name = fr_asm.o; path = build/fr_asm.o; sourceTree = SOURCE_ROOT; };
 		D7CEFE30128B4DA1953B075E /* credentialAtomicQueryMTPV2OnChain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = credentialAtomicQueryMTPV2OnChain.cpp; path = src/credentialAtomicQueryMTPV2OnChain.cpp; sourceTree = SOURCE_ROOT; };
 		DB9017CF6703496EACDCE788 /* calcwit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = calcwit.cpp; path = src/calcwit.cpp; sourceTree = SOURCE_ROOT; };
 		DBF814AE52DD4353B57D89DC /* witnesscalc_credentialAtomicQueryMTPV2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = witnesscalc_credentialAtomicQueryMTPV2.cpp; path = src/witnesscalc_credentialAtomicQueryMTPV2.cpp; sourceTree = SOURCE_ROOT; };
@@ -187,14 +146,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E10280BCA644FAC91847085 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD60EE06ED124AEE91E377A9 /* fr_asm.o in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		61D507270AD447F4A1D77EF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -803,7 +754,6 @@
 		CF66531405774C1998101C19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A62926EC79142B6816D2AEB /* libfr.a */,
 				A62CE32B748546A1946277BB /* libwitnesscalc_authV2.a */,
 				EA9B0FFEE5D5444F88577C9B /* libwitnesscalc_credentialAtomicQueryMTPV2OnChain.a */,
 				60E484BD28444B61ACBFE7A3 /* libwitnesscalc_credentialAtomicQueryMTPV2.a */,
@@ -934,7 +884,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				99D73C0F97DF4B068A919A90 /* PBXTargetDependency */,
 			);
 			name = witnesscalc_credentialAtomicQuerySigV2Static;
 			productName = witnesscalc_credentialAtomicQuerySigV2Static;
@@ -951,7 +900,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CBC9CBD31C5B4110938CBCE6 /* PBXTargetDependency */,
 			);
 			name = witnesscalc_credentialAtomicQuerySigV2OnChainStatic;
 			productName = witnesscalc_credentialAtomicQuerySigV2OnChainStatic;
@@ -968,7 +916,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				44F4E6DEA6B148AFB3B7DC96 /* PBXTargetDependency */,
 			);
 			name = witnesscalc_credentialAtomicQueryMTPV2Static;
 			productName = witnesscalc_credentialAtomicQueryMTPV2Static;
@@ -985,7 +932,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E96048A9BAE54517AC5A1159 /* PBXTargetDependency */,
 			);
 			name = witnesscalc_authV2Static;
 			productName = witnesscalc_authV2Static;
@@ -1002,28 +948,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				2FA1947BA78F446792E3ADDD /* PBXTargetDependency */,
 			);
 			name = witnesscalc_credentialAtomicQueryMTPV2OnChainStatic;
 			productName = witnesscalc_credentialAtomicQueryMTPV2OnChainStatic;
 			productReference = EA9B0FFEE5D5444F88577C9B /* libwitnesscalc_credentialAtomicQueryMTPV2OnChain.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E78068E3828E4B25A7525163 /* fr */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A9B531B188D4A40A1EDA8D1 /* Build configuration list for PBXNativeTarget "fr" */;
-			buildPhases = (
-				D5678AE298C4000E9E37A542 /* Generate /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build/fr_asm.o */,
-				6F0CB2C427684A7E81EB5377 /* Sources */,
-				0E10280BCA644FAC91847085 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = fr;
-			productName = fr;
-			productReference = 9A62926EC79142B6816D2AEB /* libfr.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1046,7 +974,6 @@
 			projectDirPath = ..;
 			projectRoot = "";
 			targets = (
-				E78068E3828E4B25A7525163 /* fr */,
 				92DFFF7D96044B24A70B560C /* witnesscalc_authV2Static */,
 				B1FEF94F46414C5588087ACC /* witnesscalc_credentialAtomicQueryMTPV2OnChainStatic */,
 				6B73D0064B57458086D82FA4 /* witnesscalc_credentialAtomicQueryMTPV2Static */,
@@ -1055,26 +982,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D5678AE298C4000E9E37A542 /* Generate /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build/fr_asm.o */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build/fr.asm,
-			);
-			name = "Generate /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build/fr_asm.o";
-			outputPaths = (
-				/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build/fr_asm.o,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/zsh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build\n  /opt/homebrew/bin/nasm -f macho64 --prefix _ fr.asm -o fr_asm.o\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build\n  /opt/homebrew/bin/nasm -f macho64 --prefix _ fr.asm -o fr_asm.o\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build\n  /opt/homebrew/bin/nasm -f macho64 --prefix _ fr.asm -o fr_asm.o\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build\n  /opt/homebrew/bin/nasm -f macho64 --prefix _ fr.asm -o fr_asm.o\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0486C42CC2994DC091F83096 /* Sources */ = {
@@ -1096,14 +1003,6 @@
 				CC2BDE98C289432982CB4921 /* credentialAtomicQueryMTPV2OnChain.cpp in Sources */,
 				EB5F5AA436F54EE2AEBE6313 /* witnesscalc.cpp in Sources */,
 				4DA9A4168C604A6CA2E1EC43 /* witnesscalc_credentialAtomicQueryMTPV2OnChain.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F0CB2C427684A7E81EB5377 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7833A0004C8446ECA007BDA2 /* fr.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,34 +1040,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2FA1947BA78F446792E3ADDD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E78068E3828E4B25A7525163 /* fr */;
-			targetProxy = 263DA75982CD43E095C873AF /* PBXContainerItemProxy */;
-		};
-		44F4E6DEA6B148AFB3B7DC96 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E78068E3828E4B25A7525163 /* fr */;
-			targetProxy = EDF1A04D47244522A761F00C /* PBXContainerItemProxy */;
-		};
-		99D73C0F97DF4B068A919A90 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E78068E3828E4B25A7525163 /* fr */;
-			targetProxy = 3D92CC7877384CF383B7F510 /* PBXContainerItemProxy */;
-		};
-		CBC9CBD31C5B4110938CBCE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E78068E3828E4B25A7525163 /* fr */;
-			targetProxy = C3005FD814144C228DC42572 /* PBXContainerItemProxy */;
-		};
-		E96048A9BAE54517AC5A1159 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E78068E3828E4B25A7525163 /* fr */;
-			targetProxy = 204403EFE7FB4AA4856DB04B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0873B1FD1C7348238D29A3BB /* RelWithDebInfo */ = {
@@ -1210,7 +1081,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = witnesscalc_authV2;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1297,7 +1168,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = witnesscalc_authV2;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1342,7 +1213,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = witnesscalc_authV2;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1492,51 +1363,6 @@
 				SYMROOT = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build";
 			};
 			name = MinSizeRel;
-		};
-		44502FECF65140B5A4038A5D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/src/Debug${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					USE_ASM,
-					ARCH_X86_64,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}//depends/gmp/package_ios_simulator_x86_64/include",
-					"${SRCROOT}/src/../src",
-					"${SRCROOT}//src/../build",
-					"${SRCROOT}//src/../depends/json/single_include",
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = fr;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build";
-				TARGET_TEMP_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
 		};
 		4EE414DA3EC5460786F0047B /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
@@ -1768,7 +1594,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = witnesscalc_authV2;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/witnesscalc/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_witnesscalc_ios_simulator_x86_64/build/witnesscalc_authV2Static.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1975,52 +1801,6 @@
 			};
 			name = MinSizeRel;
 		};
-		E7DD9E98897B492A8129CBB4 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					USE_ASM,
-					ARCH_X86_64,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}//depends/gmp/package_ios_simulator_x86_64/include",
-					"${SRCROOT}/src/../src",
-					"${SRCROOT}//src/../build",
-					"${SRCROOT}//src/../depends/json/single_include",
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = fr;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build";
-				TARGET_TEMP_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
-		};
 		EDBF239E1A3847DD9673023D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2190,112 +1970,9 @@
 			};
 			name = Debug;
 		};
-		FB25D993044C40BAA8DFD16E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					USE_ASM,
-					ARCH_X86_64,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}//depends/gmp/package_ios_simulator_x86_64/include",
-					"${SRCROOT}/src/../src",
-					"${SRCROOT}//src/../build",
-					"${SRCROOT}//src/../depends/json/single_include",
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = fr;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build";
-				TARGET_TEMP_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		FCF38E4EA5824E07BAE56F37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/src/Release${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					USE_ASM,
-					ARCH_X86_64,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}//depends/gmp/package_ios_simulator_x86_64/include",
-					"${SRCROOT}/src/../src",
-					"${SRCROOT}//src/../build",
-					"${SRCROOT}//src/../depends/json/single_include",
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = fr;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build";
-				TARGET_TEMP_DIR = "${SRCROOT}/build_witnesscalc_ios_simulator_x86_64/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A9B531B188D4A40A1EDA8D1 /* Build configuration list for PBXNativeTarget "fr" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44502FECF65140B5A4038A5D /* Debug */,
-				FCF38E4EA5824E07BAE56F37 /* Release */,
-				E7DD9E98897B492A8129CBB4 /* MinSizeRel */,
-				FB25D993044C40BAA8DFD16E /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		6845A8C83E9143B484F572EC /* Build configuration list for PBXNativeTarget "witnesscalc_credentialAtomicQuerySigV2OnChainStatic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
