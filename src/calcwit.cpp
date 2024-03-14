@@ -1,3 +1,4 @@
+#include <__config>
 #include <iomanip>
 #include <sstream>
 #include <assert.h>
@@ -47,6 +48,23 @@ Circom_CalcWit::Circom_CalcWit (Circom_Circuit *aCircuit, uint maxTh) {
 
 Circom_CalcWit::~Circom_CalcWit() {
   // ...
+  printf("~Circom_CalcWit begin\n");
+  if (inputSignalAssigned != nullptr) {
+    delete[] inputSignalAssigned;
+    inputSignalAssigned = nullptr;
+  }
+
+  if (signalValues != nullptr) {
+    delete[] signalValues;
+    signalValues = nullptr;
+  }
+
+  if (componentMemory != nullptr) {
+    delete[] componentMemory;
+    componentMemory = nullptr;
+  }
+  printf("~Circom_CalcWit end\n");
+
 }
 
 uint Circom_CalcWit::getInputSignalHashPosition(u64 h) {

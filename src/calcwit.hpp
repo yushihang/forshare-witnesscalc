@@ -21,15 +21,15 @@ class Circom_CalcWit {
   bool *inputSignalAssigned;
   uint inputSignalAssignedCounter;
 
-  Circom_Circuit *circuit;
+  Circom_Circuit *circuit = nullptr;
 
 public:
 
-  FrElement *signalValues;
-  Circom_Component* componentMemory;
-  FrElement* circuitConstants; 
+  FrElement *signalValues = nullptr;
+  Circom_Component* componentMemory = nullptr;
+  FrElement* circuitConstants = nullptr; 
   std::map<u32,IODefPair> templateInsId2IOSignalInfo; 
-  std::string* listOfTemplateMessages; 
+  std::string* listOfTemplateMessages = nullptr; 
 
   // parallelism
   std::mutex numThreadMutex;
