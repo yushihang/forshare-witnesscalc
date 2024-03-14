@@ -81,7 +81,7 @@ Circom_Circuit* loadCircuit(std::string const &datFileName) {
 	  memcpy((void *)defs[j].lengths,(void *)(pu32+2),len*sizeof(u32));
 	  pu32 += len + 2;
 	}
-	p.defs = (IODef*)calloc(10, sizeof(IODef));
+	p.defs = (IODef*)calloc(p.len, sizeof(IODef));
 	for (u32 j = 0; j < p.len; j++){
 	  p.defs[j] = defs[j];
 	}
