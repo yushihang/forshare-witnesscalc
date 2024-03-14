@@ -48,7 +48,7 @@ Circom_CalcWit::Circom_CalcWit (Circom_Circuit *aCircuit, uint maxTh) {
 
 Circom_CalcWit::~Circom_CalcWit() {
   // ...
-  printf("~Circom_CalcWit begin\n");
+  //printf("~Circom_CalcWit begin\n");
   if (inputSignalAssigned != nullptr) {
     delete[] inputSignalAssigned;
     inputSignalAssigned = nullptr;
@@ -63,7 +63,7 @@ Circom_CalcWit::~Circom_CalcWit() {
     delete[] componentMemory;
     componentMemory = nullptr;
   }
-  printf("~Circom_CalcWit end\n");
+  //printf("~Circom_CalcWit end\n");
 
 }
 
