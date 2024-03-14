@@ -26,55 +26,50 @@ struct __attribute__((__packed__)) HashSignalInfo {
 struct IODef { 
     u32 offset;
     u32 len;
-    u32 *lengths = nullptr;
+    u32 *lengths;
     
 };
 
 struct IODefPair { 
     u32 len;
-    IODef* defs = nullptr;
+    IODef* defs;
 
 };
 
 struct Circom_Circuit {
   //  const char *P;
-  HashSignalInfo* InputHashMap  = nullptr;
-  u64* witness2SignalList = nullptr;
-  FrElement* circuitConstants = nullptr;
+  HashSignalInfo* InputHashMap;
+  u64* witness2SignalList;
+  FrElement* circuitConstants;
   std::map<u32,IODefPair> templateInsId2IOSignalInfo;
     
     //shihang 2024-03-14
     ~Circom_Circuit() {
-      
-      printf("witnesscalc ~Circom_Circuit begin\n");
 
+    if (InputHashMap != nullptr) {
       delete[] InputHashMap;
       InputHashMap = nullptr;
+    }
 
-      printf("witnesscalc ~Circom_Circuit 1\n");
+    if (witness2SignalList != nullptr) {
       delete[] witness2SignalList;
       witness2SignalList = nullptr;
+    }
 
-      printf("witnesscalc ~Circom_Circuit 2\n");
-
+    if (circuitConstants != nullptr) {
       delete[] circuitConstants;
       circuitConstants = nullptr;
+    }
 
-      printf("witnesscalc ~Circom_Circuit 3\n");
-      for (auto &pair : templateInsId2IOSignalInfo) {
-        auto *defs = pair.second.defs;
+    for (auto &pair : templateInsId2IOSignalInfo) {
+      auto *defs = pair.second.defs;
+      if (defs != nullptr) {
         delete[] defs->lengths;
         free(defs);
       }
 
-      printf("witnesscalc ~Circom_Circuit 4\n");
-      templateInsId2IOSignalInfo.clear();
-
-
-
-      printf("witnesscalc ~Circom_Circuit end\n");
-
     }
+  }
 };
 
 
@@ -85,12 +80,12 @@ struct Circom_Component {
   std::string templateName;
   std::string componentName;
   u64 idFather; 
-  u32* subcomponents = nullptr;
-  bool* subcomponentsParallel = nullptr;
-  bool *outputIsSet = nullptr;  //one for each output
-  std::mutex *mutexes = nullptr;  //one for each output
+  u32* subcomponents;
+  bool* subcomponentsParallel;
+  bool *outputIsSet;  //one for each output
+  std::mutex *mutexes;  //one for each output
   std::condition_variable *cvs;
-  std::thread *sbct = nullptr; //subcomponent threads
+  std::thread *sbct; //subcomponent threads
 };
 
 /*
