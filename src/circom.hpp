@@ -1,6 +1,7 @@
 #ifndef __CIRCOM_H
 #define __CIRCOM_H
 
+#include <__config>
 #include <map>
 #include <gmp.h>
 #include <mutex>
@@ -25,20 +26,55 @@ struct __attribute__((__packed__)) HashSignalInfo {
 struct IODef { 
     u32 offset;
     u32 len;
-    u32 *lengths;
+    u32 *lengths = nullptr;
+    
 };
 
 struct IODefPair { 
     u32 len;
-    IODef* defs;
+    IODef* defs = nullptr;
+
 };
 
 struct Circom_Circuit {
   //  const char *P;
-  HashSignalInfo* InputHashMap;
-  u64* witness2SignalList;
-  FrElement* circuitConstants;  
+  HashSignalInfo* InputHashMap  = nullptr;
+  u64* witness2SignalList = nullptr;
+  FrElement* circuitConstants = nullptr;
   std::map<u32,IODefPair> templateInsId2IOSignalInfo;
+    
+    //shihang 2024-03-14
+    ~Circom_Circuit() {
+      
+      printf("witnesscalc ~Circom_Circuit begin\n");
+
+      delete[] InputHashMap;
+      InputHashMap = nullptr;
+
+      printf("witnesscalc ~Circom_Circuit 1\n");
+      delete[] witness2SignalList;
+      witness2SignalList = nullptr;
+
+      printf("witnesscalc ~Circom_Circuit 2\n");
+
+      delete[] circuitConstants;
+      circuitConstants = nullptr;
+
+      printf("witnesscalc ~Circom_Circuit 3\n");
+      for (auto &pair : templateInsId2IOSignalInfo) {
+        auto *defs = pair.second.defs;
+        delete[] defs->lengths;
+        free(defs);
+      }
+
+      printf("witnesscalc ~Circom_Circuit 4\n");
+      templateInsId2IOSignalInfo.clear();
+
+
+
+      printf("witnesscalc ~Circom_Circuit end\n");
+
+    }
 };
 
 
@@ -49,12 +85,12 @@ struct Circom_Component {
   std::string templateName;
   std::string componentName;
   u64 idFather; 
-  u32* subcomponents;
-  bool* subcomponentsParallel;
-  bool *outputIsSet;  //one for each output
-  std::mutex *mutexes;  //one for each output
+  u32* subcomponents = nullptr;
+  bool* subcomponentsParallel = nullptr;
+  bool *outputIsSet = nullptr;  //one for each output
+  std::mutex *mutexes = nullptr;  //one for each output
   std::condition_variable *cvs;
-  std::thread *sbct; //subcomponent threads
+  std::thread *sbct = nullptr; //subcomponent threads
 };
 
 /*
